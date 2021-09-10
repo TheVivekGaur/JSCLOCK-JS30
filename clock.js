@@ -7,10 +7,6 @@ function setDate(){
  const seconds = now.getSeconds();
  const secondsDegrees = ((seconds / 60) * 360) + 90;
  secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
- if(secondsDegrees == 90)
- {
-  secondHand.style.transition = 0;
- }
  const minutes = now.getMinutes();
  const minutesDegrees = ((minutes / 60)*360) +90;
  minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
